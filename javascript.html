@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
+    <style>
+        button{
+            color: blueviolet;
+        }
+        h1{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <p id="test">Hi I am a para</p>
-    <p id="test2">Hi I am a para</p>
-    <p id="test3">Hi I am a para</p>
-    <p id="test4">Hi I am a para</p>
-
+    <p id="sum">Hi I am a para</p>
+    <p id="diff">Hi I am a para</p>
+    <p id="div">Hi I am a para</p>
+    <p id="multi">Hi I am a para</p>
+    <h1 id="tect">  </h1>
+    <button onclick="document.getElementById('tect').innerHTML = Date();">
+     Click me
+    </button>
 <script>
-    var a = 10;
-    var b = 20;
-    var sum = a + b;
-    var sub = a - b;
-    var div = a / b;
+    var a,b,sum,sub,div 
+    a = 10;
+    b = 20;
+    sum = a + b;
+    sub = a - b;
+    div = a / b;
     
-    document.getElementById('test').
+    document.getElementById('sum').
     innerHTML= sum;
 
-    document.getElementById('test2').innerHTML =  sub;
-    document.getElementById('test3').innerHTML =  div;
-    document.getElementById('test4').innerHTML =  a*b;
+    document.getElementById('diff').innerHTML =  sub;
+    document.getElementById('div').innerHTML =  div;
+    document.getElementById('multi').innerHTML =  a*b;
+    document.getElementById('tect').innerHTML =  a*b;
     
 </script>
 </body>
